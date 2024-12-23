@@ -48,9 +48,13 @@
 @media (max-width: 480px) {
   .smoke-effect {
     top: 70%; /* Adjust vertical alignment */
-    right: 20%; /* Reduce margin */
+    right: 18%; /* Reduce margin */
     width: 60px; /* Further reduce size */
     height: 70px;
     transform: translate(0, -50%);
+  }
+  .icon .smoke-effect{
+    width: 40px;
+    height: 20px;
   }
 }
