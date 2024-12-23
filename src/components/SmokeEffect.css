@@ -1,0 +1,56 @@
+/* Base styles */
+.smoke-effect {
+  position: absolute;
+  top: 60%;
+  right: 4%; /* Maintain consistent positioning */
+  width: 200px;
+  height: 120px;
+  transform: translate(-50%, -50%);
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent any overflow issues */
+}
+
+
+@keyframes float {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 0; /* Fade out at the end */
+    transform: translateY(-20px); /* Slightly increase Y translation */
+  }
+}
+
+/* Responsive adjustments for tablet view */
+@media (max-width: 768px) {
+  .smoke-effect {
+    top: 30%; /* Adjusted position for smaller screens */
+    right: 5%; /* Center more gracefully */
+    width: 150px; /* Reduce width for better fit */
+    height: 90px;
+    transform: translate(0, -50%); /* Center horizontally without translation issues */
+  }
+
+  .icon {
+    font-size: 18px; /* Adjust icon size */
+  }
+}
+
+/* Responsive adjustments for mobile view */
+@media (max-width: 480px) {
+  .smoke-effect {
+    top: 70%; /* Adjust vertical alignment */
+    right: 20%; /* Reduce margin */
+    width: 60px; /* Further reduce size */
+    height: 70px;
+    transform: translate(0, -50%);
+  }
+}
