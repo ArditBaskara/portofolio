@@ -40,7 +40,7 @@ const projectData = [
     title: 'Portofolio V1',
     description: 'Online version of my 2024 resume.',
     tech: ['React', 'Styled-component', 'formspree', 'vite', 'Vercel'],
-    link: '#',
+    link: 'https://github.com/ArditBaskara/portofolio',
   },
   {
     title: 'Wind Turbine Monitoring',
