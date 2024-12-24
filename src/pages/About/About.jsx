@@ -99,7 +99,7 @@ export default function About() {
               <span style={{ color: "#87CEEB" }}>skills</span> and knowledge in <span style={{ color: "#87CEEB" }}>innovative ways</span>.
             </h2>
             <a
-              href="https://drive.google.com/file/d/1PZWECOK7dhu2aM7ak3ct79FwHwa-kqlo/view?usp=sharing"
+              href="https://drive.google.com/file/d/1-c1Z_Lj9mM5TRx8QmsZqXBS6ejZRdqii/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
