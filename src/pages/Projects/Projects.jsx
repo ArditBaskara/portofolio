@@ -50,7 +50,7 @@ const projectData = [
   },
   {
     title: 'Raksasa',
-    description: 'Find out how we built a custom headless CMS with Node, Express, and Firebase.',
+    description: 'Interactive Learning Website for deaf children to bridge the gap between deaf children and the world',
     tech: ['Figma', 'Adobe Premiere Pro', 'MySql'],
     link: 'https://github.com/HauzanTsaaqif/raksasa-app.git',
   },
