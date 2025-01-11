@@ -68,7 +68,7 @@ const itemVariants = {
 const Projects = () => {
   const [showMore, setShowMore] = useState(false);
 
-  const visibleProjects = showMore ? projectData : projectData.slice(0, 6);
+  const visibleProjects = showMore ? projectData : projectData.slice(0, 8);
 
   return (
     <Section id="projects">
