@@ -1,5 +1,13 @@
   const experiences = [
     {
+      title: "Practical Assistant Robotics",
+      company_name: "Dept. Mechatronics and AI",
+      date: "2024",
+      details: [
+        "taught fundamental  <span style='color: white;'>robotics concepts</span>, including the <span style='color: white;'>degree of freedom </span> and its applications, and helped students apply theoretical knowledge to practical scenarios using <span style='color: white;'>the Dobot Magician.</span> Additionally, I guided and supported <span style='color: white;'>30 students </span> in learning and operating the Dobot, ensuring they understood its tools and functionalities."
+      ],
+    },
+    {
       title: "Research Assistant",
       company_name: "Dept. Mechatronics and AI",
       date: "2024",
