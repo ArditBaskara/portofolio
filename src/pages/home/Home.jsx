@@ -59,21 +59,21 @@ export const Home = () => {
           </div>
         </Position>
         <SocialIcons>
-          <a 
-            href="https://www.linkedin.com/in/ardityabaskaramahbubi" 
-            target="_blank" 
+          <a
+            href="https://www.linkedin.com/in/ardityabaskaramahbubi"
+            target="_blank"
             rel="noopener noreferrer">
             <FaLinkedin className="icon" />
           </a>
-          <a 
-            href="https://github.com/ArditBaskara" 
-            target="_blank" 
+          <a
+            href="https://github.com/ArditBaskara"
+            target="_blank"
             rel="noopener noreferrer">
             <FaGithub className="icon" />
           </a>
-          <a 
-            href="https://www.instagram.com/ardit.baskara/" 
-            target="_blank" 
+          <a
+            href="https://www.instagram.com/ardit.baskara/"
+            target="_blank"
             rel="noopener noreferrer">
             <FaInstagram className="icon" />
           </a>
