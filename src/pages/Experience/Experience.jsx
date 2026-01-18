@@ -5,7 +5,7 @@ import { Page } from "../../components/Page";
 import { experiences } from "../../data/experiences";
 import { SectionWrapper } from "../../components/hoc";
 import { textVariant } from "../../utils/motion";
-import { blue , typeScale } from "../../utils";
+import { blue, typeScale } from "../../utils";
 
 const ExperienceCard = ({ experience, onClick, isActive, isMobile }) => {
   return (
@@ -107,99 +107,131 @@ const Content = styled.div`
   flex-direction: column;
   align-items: center;
   font-size: ${typeScale.paragraph};
-  gap: 1.5rem;
+  gap: 2rem;
+  width: 100%;
+  padding: 1rem;
 
   @media (min-width: 640px) {
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 5rem;
-    font-size: ${typeScale.paragraph};
+    padding: 3rem;
+    gap: 3rem;
   }
 `;
 
 const CardList = styled.div`
   display: flex;
-  flex-direction: column;
-  z-index: 10;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
   width: 100%;
-
+  z-index: 10;
 
   @media (min-width: 640px) {
-    width: auto;
+    gap: 1.5rem;
   }
 `;
 
 const Card = styled.div`
   cursor: pointer;
-  margin-bottom: 1.25rem;
-  padding: 1.25rem;
-  max-width: 36rem;
+  padding: 1rem 1.5rem;
   position: relative;
-  text-align: ${(props) => (props.isMobile ? "center" : "left")};
+  text-align: center;
   background: ${(props) => (props.isActive ? "#e0f7fa" : "#ffffff")};
-  border-radius: 1rem;
+  border-radius: 0.75rem;
   transition: all 0.3s ease-in-out;
+  flex: 0 1 auto;
+  min-width: 200px;
 
   /* Filter out isActive and isMobile from props to avoid warnings */
   ${props => {
-    const { isActive, isMobile, ...restProps } = props; 
-    return restProps; 
+    const { isActive, isMobile, ...restProps } = props;
+    return restProps;
   }}
 
   &:hover {
-    background: ${(props) => (props.isMobile ? "#f9fafb" : "#e5e7eb")};
+    background: #e5e7eb;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (min-width: 768px) {
+    padding: 1.25rem 2rem;
+    min-width: 250px;
   }
 `;
 
 const Indicator = styled.div`
   position: absolute;
   left: 0;
-  top: 0;
+  right: 0;
   bottom: 0;
-  width: 0.75rem;
+  height: 0.25rem;
   background: #14b8a6;
-  margin: 1.5rem;
+  border-radius: 0.25rem 0.25rem 0 0;
   display: block;
 
   @media (min-width: 768px) {
-    width: 1.25rem;
+    height: 0.375rem;
   }
 `;
 
 const Title = styled.h3`
-  font-size: 1.25rem;
+  font-size: 0.875rem;
   font-weight: bold;
-  padding-left: 2rem;
   color: ${(props) => (props.isActive ? "#14b8a6" : "#475569")};
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: 768px) {
+    font-size: 1rem;
+  }
 
   @media (min-width: 1024px) {
-    font-size: 1.875rem;
+    font-size: 1.125rem;
   }
 `;
 
 const Company = styled.p`
-  font-size: 1rem;
-  padding-top: 0.5rem;
-  padding-left: 2rem;
-  color: ${(props) => (props.isActive ? "#14b8a6" : "#475569")};
+  font-size: 0.75rem;
+  padding-top: 0.25rem;
+  color: ${(props) => (props.isActive ? "#14b8a6" : "#64748b")};
+  margin: 0;
+
+  @media (min-width: 768px) {
+    font-size: 0.875rem;
+  }
 
   @media (min-width: 1024px) {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 `;
 
 const Details = styled.div`
+  width: 100%;
+  max-width: 60rem;
+  display: flex;
+  justify-content: center;
+
   ul {
-    max-width: 60rem;
+    width: 100%;
     list-style: none;
-    padding: 1rem;
+    padding: 2rem;
     border: 0.5rem solid #1e293b;
     border-radius: 1rem;
+    margin: 0;
+    text-align: left;
 
     li {
-      font-size: 0.625rem;
+      font-size: 0.875rem;
       font-weight: 600;
       color: #64748b;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
 
       @media (min-width: 768px) {
         font-size: 1.125rem;

@@ -6,6 +6,8 @@ import Experience from "./pages/Experience/Experience";
 import { Home } from "./pages/home";
 import Projects  from "./pages/Projects/Projects";
 import Footer from "./pages/Footer/Footer"
+import './index.css';
+
 
 function App() {
   return (
