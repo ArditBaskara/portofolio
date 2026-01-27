@@ -117,7 +117,7 @@ export default function About() {
             </Description>
 
             <ResumeLink
-              href="https://drive.google.com/file/d/180yZ9cVMyNrkYIC3LKAR2jUexleUduT6/view?usp=sharing"
+              href="https://drive.google.com/file/d/1KroWt3xFsoLmSnW8ysqS_ciIVRtd1rNu/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
